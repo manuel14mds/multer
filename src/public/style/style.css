@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;400;600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    --color-one: #DCD7C9;
+    --color-two: #A27B5C;
+    --color-three: #3F4E4F;
+    --color-four: #2C3639;
+    --color-five: #4FA095;
+
+    /* thin-100, regular-400, medium-600, bold-800 */
+    --font: 'Noto Sans Mono', monospace;
+}
+
+body{
+    font-family: var(--font);
+}
+.btn-primary{
+    background-color: var(--color-two) !important;
+}
+/* 
+link de paleta de colores
+https://www.colorhunt.co/palette/2c36393f4e4fa27b5cdcd7c9
+*/
+
+/* LOGIN */
+
+.formContainer .loginFrom {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    max-width: 550px;
+    background-color: var(--color-one);
+    font-size: larger;
+}
+.formContainer .loginFrom h1{
+    color: var(--color-four);
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.formContainer .loginFrom .loginWith{
+    text-align: center;
+}
+.formContainer .loginFrom .loginForm_register{
+    display: grid;
+    place-items: center;
+}
+
+
+/* REGISTER */
+.formContainer .registerFrom {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    max-width: 550px;
+    background-color: var(--color-one);
+    font-size: larger;
+}
+.formContainer .registerFrom h1{
+    color: var(--color-four);
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.formContainer .registerFrom .registerWith{
+    text-align: center;
+}
+.formContainer .registerFrom .registerForm_login{
+    display: grid;
+    place-items: center;
+}
+
+/* CARD */
+.card{
+    background-color: #2C3639;
+    border-radius: 10px;
+    width: 150px;
+    height: 270px;
+    overflow: hidden;
+}
+.card .card_imageContainer{
+    height: 150px;
+    background-color: aqua;
+}
+.card .card_infoContainer{
+    height: 120px;
+    padding: 8px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--color-four);
+    color: var(--color-one);
+}
+.card .card_infoContainer .card_itemName{
+    max-height: 45px;
+    padding: 2px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-right: auto;
+    overflow-y: scroll;
+    text-align: left;
+}
+.card .card_infoContainer .card_itemPrice{
+    margin-right: auto;
+    padding:2px 2px 0px 6px;
+    text-align: left;
+    font-size: 0.6rem;
+}
+.card .card_infoContainer .card_itemPrice samp{
+    color: var(--color-five);
+}
+.card .card_infoContainer .card_btnContainer{
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: auto;
+}
+.card .card_infoContainer .card_btnContainer .btn{
+    font-size: 0.7rem;
+    color: var(--color-one);
+    border-color: transparent;
+}
+/* CARD end */
+
+
+@media (min-width: 600px) {
+    .formContainer {
+        display: grid;
+        place-items: center;
+    }
+    .formContainer .loginFrom {
+        min-width: 550px;
+        padding: 30px;
+    }
+    .formContainer .registerFrom {
+        min-width: 550px;
+        padding: 30px;
+    }
+
+    /* CARD */
+    .card{
+        width: 195px;
+        height: 351px;
+    }
+    .card .card_imageContainer{
+        height: 195px;
+    }
+    .card .card_infoContainer{
+        height: 156px;
+        padding: 10px 6px;
+    }
+    .card .card_infoContainer .card_itemName{
+        max-height: 55px;
+        font-size: 0.9rem;
+    }
+    .card .card_infoContainer .card_itemPrice{
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+    .card .card_infoContainer .card_btnContainer .btn{
+        font-size: 0.9rem;
+    }
+    /* CARD end */
+
+
+}
