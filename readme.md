@@ -8,4 +8,4 @@ HTTP Form
 
 ## Back:
 Endpoint: result request data view
-<img src="src/public/images/back" alt="demo" width="400"/>
+<img src="src/public/images/back.png" alt="demo" width="400"/>
